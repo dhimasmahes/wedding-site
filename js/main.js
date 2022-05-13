@@ -1,7 +1,7 @@
 // Countdown Function
 
 // Set the date for counting down to
-const countDownDate = new Date("Jun 4, 2022 09:00:00 GMT+0700").getTime();
+const countDownDate = new Date("Jun 4, 2022 10:00:00 GMT+0700").getTime();
 
 // Update countdown every 1 second
 let x = setInterval(function() {
