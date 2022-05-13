@@ -1,0 +1,703 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Dancing+Script:wght@600;700&family=Great+Vibes&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css");
+@use '_partials/reset';
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+}
+
+body {
+  background-color: #FBF6E8;
+  font-family: "Montserrat", BlinkMacSystemFont, -apple-system, "Noto Sans", "Noto Sans CJK JP", "Noto Sans JP", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.pc {
+  display: none;
+}
+
+.atcb_button_wrapper {
+  display: inline-block;
+  padding: 15px;
+  position: relative;
+}
+
+.atcb_button {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #40523F;
+  border: 0px;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  color: #FBF6E8;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Montserrat", BlinkMacSystemFont, -apple-system, "Noto Sans", "Noto Sans CJK JP", "Noto Sans JP", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 24px;
+  margin: 10px 0;
+  max-width: 484px;
+  min-width: 150px;
+  padding: 20px 40px;
+  position: relative;
+  text-align: center;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  -webkit-transform: translateZ(0px);
+          transform: translateZ(0px);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  width: auto;
+  z-index: 1;
+}
+
+.atcb_button:focus,
+.atcb_button:hover {
+  background: #FBF6E8;
+  color: #40523F;
+}
+
+@media only screen and (max-width: 375px) {
+  .atcb_button {
+    padding: 20px 37px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .atcb_button {
+    font-size: 1.175rem;
+  }
+}
+
+.atcb_list_item {
+  font-family: "Montserrat", BlinkMacSystemFont, -apple-system, "Noto Sans", "Noto Sans CJK JP", "Noto Sans JP", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #40523F;
+  border: 1px solid #FBF6E8;
+  color: #FBF6E8;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  left: 50%;
+  margin-top: -1px;
+  /* ugly, but prevents a glitch in some cases */
+  position: relative;
+  padding: 13px 15px;
+  text-align: left;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.atcb_list_item:focus,
+.atcb_list_item:hover {
+  background: #FBF6E8;
+  -webkit-box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.4);
+  color: #40523F;
+}
+
+@media only screen and (max-width: 575px) {
+  .atcb_list_item {
+    font-size: 1rem;
+  }
+}
+
+.atcb_button.atcb_active {
+  background: #FBF6E8;
+  color: #40523F;
+  -webkit-box-shadow: 1px 8px 12px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 8px 12px 0px rgba(0, 0, 0, 0.5);
+  margin: 0;
+  padding: 20px 40px;
+  -webkit-transform: none;
+          transform: none;
+  -webkit-transition: margin .1s ease-out, padding .1s ease-out, -webkit-transform .1s ease-out;
+  transition: margin .1s ease-out, padding .1s ease-out, -webkit-transform .1s ease-out;
+  transition: margin .1s ease-out, padding .1s ease-out, transform .1s ease-out;
+  transition: margin .1s ease-out, padding .1s ease-out, transform .1s ease-out, -webkit-transform .1s ease-out;
+  z-index: 160;
+}
+
+.atcb_icon {
+  height: 1.5rem;
+  display: inline-block;
+  margin-bottom: 4px;
+  margin-right: 0px;
+}
+
+.top {
+  text-align: center;
+  padding-top: 100px;
+  margin-bottom: 20px;
+  background: url(../img/bg-1.png) no-repeat top right;
+  background-size: 320px;
+}
+
+.top h1 {
+  font-family: "Great Vibes";
+  max-width: 238px;
+}
+
+.top figure img {
+  max-width: 317px;
+}
+
+.top p {
+  max-width: 338px;
+}
+
+.countdown {
+  color: #40523F;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.countdown p {
+  color: #AD7F0A;
+  letter-spacing: 0.2em;
+  font-size: 1.6rem;
+  font-weight: 600;
+  position: relative;
+  background: url(../img/cd-border.png) no-repeat center bottom;
+  background-size: 240px;
+  padding-bottom: 37px;
+  margin-bottom: 20px;
+}
+
+.countdown ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.countdown ul li span:first-child {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.countdown ul li span:nth-child(2) {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.countdown ul li span {
+  display: block;
+}
+
+.quotes {
+  color: #FBF6E8;
+  background-color: #40523F;
+  text-align: center;
+  padding: 80px 0;
+}
+
+.quotes p {
+  max-width: 322px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  text-align: center;
+  letter-spacing: 0.1em;
+  position: relative;
+}
+
+.quotes p:first-child::before {
+  content: open-quote;
+  position: absolute;
+  color: rgba(255, 248, 227, 0.48);
+  font-size: 2.45rem;
+  font-family: "Montserrat", BlinkMacSystemFont, -apple-system, "Noto Sans", "Noto Sans CJK JP", "Noto Sans JP", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  top: -20px;
+  left: -20px;
+  width: 40px;
+  height: 40px;
+}
+
+.quotes p:first-child::after {
+  content: close-quote;
+  position: absolute;
+  color: rgba(255, 248, 227, 0.48);
+  font-size: 2.45rem;
+  font-family: "Montserrat", BlinkMacSystemFont, -apple-system, "Noto Sans", "Noto Sans CJK JP", "Noto Sans JP", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  bottom: -50px;
+  right: -20px;
+  width: 40px;
+  height: 40px;
+}
+
+.quotes p:nth-child(2) {
+  font-weight: 600;
+  margin-top: 30px;
+}
+
+.undangan {
+  text-align: center;
+  color: #40523F;
+  padding-top: 190px;
+  background: url(../img/bg-3.png) no-repeat top right;
+  background-size: 315px;
+}
+
+.undangan h1, .undangan h2 {
+  font-family: "Dancing Script";
+}
+
+.undangan h1 {
+  font-size: 2.25rem;
+}
+
+.undangan h2 {
+  font-size: 2.25rem;
+}
+
+.undangan h2:nth-of-type(2) {
+  margin: 30px 0;
+}
+
+.undangan p {
+  font-size: 1.25rem;
+  line-height: 30px;
+  margin: 0 35px;
+}
+
+.undangan p:first-of-type {
+  margin: 30px 40px;
+}
+
+.undangan .undangan-text p:first-of-type {
+  margin: 0;
+}
+
+.gallery {
+  padding-top: 105px;
+  background: url(../img/bg-4.png) no-repeat right top;
+  background-size: 250px;
+  background-position-x: 0px;
+  margin-bottom: 30px;
+}
+
+.gallery .gallery-container {
+  margin: 0 15px;
+}
+
+.gallery .gallery-container img {
+  margin-bottom: 20px;
+}
+
+.lokasi {
+  color: #FBF6E8;
+  text-align: center;
+}
+
+.lokasi .akad, .lokasi .resepsi {
+  background-color: #D4927D;
+  padding-bottom: 80px;
+}
+
+.lokasi .akad h1, .lokasi .resepsi h1 {
+  font-family: "Dancing Script";
+  font-size: 3.5rem;
+  background: url(../img/loc-border-1.png) no-repeat center bottom;
+  background-size: 250px;
+  padding-bottom: 50px;
+  margin-bottom: 40px;
+}
+
+.lokasi .akad p, .lokasi .resepsi p {
+  font-size: 1.5rem;
+}
+
+.lokasi .akad p:first-of-type, .lokasi .resepsi p:first-of-type {
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.lokasi .akad p:nth-of-type(2), .lokasi .resepsi p:nth-of-type(2) {
+  background: url(../img/loc-border-2.png) no-repeat center bottom;
+  background-size: 250px;
+  padding-bottom: 70px;
+  margin-bottom: 50px;
+  font-weight: 500;
+}
+
+.lokasi .akad p:nth-of-type(3), .lokasi .resepsi p:nth-of-type(3) {
+  font-size: 1.25rem;
+  margin: 0 25px;
+  line-height: 30px;
+}
+
+.lokasi .akad {
+  padding-top: 80px;
+}
+
+.maps {
+  text-align: center;
+  padding-top: 90px;
+  background: url(../img/bg-5.png) no-repeat top right;
+  background-size: 250px;
+}
+
+.maps h1 {
+  font-family: "Dancing Script";
+  color: #40523F;
+  font-size: 4rem;
+}
+
+.maps .maps-container {
+  background-color: white;
+  padding: 20px;
+  margin: 20px;
+}
+
+.maps .maps-responsive {
+  overflow: hidden;
+  padding-bottom: 200.25%;
+  position: relative;
+  height: 0;
+}
+
+.maps .maps-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.qr {
+  text-align: center;
+  margin-top: 80px;
+  padding-bottom: 80px;
+}
+
+.qr h1 {
+  font-family: "Dancing Script";
+  color: #40523F;
+  font-size: 4rem;
+}
+
+.qr .qr-container {
+  background-color: white;
+  margin: 20px;
+  padding: 50px 30px;
+  position: relative;
+}
+
+.qr .qr-container img {
+  max-width: 300px;
+  margin-bottom: 30px;
+}
+
+.qr .qr-container p {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.qr .qr-container::after {
+  content: "";
+  position: absolute;
+  background: url(../img/qr-bg.png) no-repeat top center;
+  background-size: cover;
+  width: 143px;
+  height: 290px;
+  bottom: -80px;
+  right: -10px;
+  z-index: 98;
+}
+
+.qr button {
+  color: #FBF6E8;
+  background-color: #40523F;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  font-family: "Montserrat", BlinkMacSystemFont, -apple-system, "Noto Sans", "Noto Sans CJK JP", "Noto Sans JP", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 1.5rem;
+  padding: 20px 30px;
+  margin-top: 20px;
+  position: relative;
+  z-index: 99;
+}
+
+.qr button:hover {
+  background-color: white;
+  color: #40523F;
+}
+
+.penutup {
+  text-align: center;
+  color: #40523F;
+  padding-bottom: 300px;
+  background: url(../img/bg-sp.jpg) no-repeat bottom center;
+  background-size: cover;
+}
+
+.penutup p {
+  max-width: 318px;
+  font-size: 1.25rem;
+  letter-spacing: 0.1em;
+  line-height: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .top {
+    background: url(../img/bg-1.png) no-repeat top right, url(../img/bg-2.png) no-repeat top left;
+    background-size: 430px, 230px;
+  }
+  .top h1 {
+    max-width: 350px;
+  }
+  .top figure img {
+    max-width: 400px;
+  }
+  .top p {
+    max-width: 420px;
+  }
+  .countdown .countdown-wrapper {
+    width: 600px;
+  }
+  .countdown p {
+    color: #AD7F0A;
+    font-size: 2rem;
+    background-size: 400px;
+    padding-bottom: 70px;
+    margin-bottom: 20px;
+  }
+  .countdown ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .countdown ul li span:first-child {
+    font-size: 3rem;
+  }
+  .countdown ul li span:nth-child(2) {
+    font-size: 1.5rem;
+  }
+  .atcb_button {
+    max-width: auto;
+    width: 480px;
+    padding: 40px 40px;
+    margin: 30px 0;
+    font-size: 1.75rem;
+  }
+  .atcb_button.atcb_active {
+    padding: 40px 40px;
+  }
+  .atcb_list_item {
+    font-size: 1.5rem;
+    width: 450px;
+    margin: 0 auto;
+  }
+  .atcb_list_item.atcb_text {
+    width: 50px;
+  }
+  .quotes p {
+    max-width: 450px;
+    font-size: 1.25rem;
+  }
+  .undangan {
+    padding-top: 100px;
+    background-size: 460px;
+    background-position-y: 150px;
+  }
+  .undangan h1, .undangan h2 {
+    font-size: 2.5rem;
+  }
+  .undangan .undangan-text {
+    margin-top: -50px;
+  }
+  .undangan .undangan-text p {
+    font-size: 1.5rem;
+    margin: 20px 100px;
+  }
+  .lokasi .resepsi {
+    margin-top: -10px;
+  }
+  .lokasi .akad p:nth-of-type(3),
+  .lokasi .resepsi p:nth-of-type(3) {
+    font-size: 1.5rem;
+    margin: 0 100px;
+  }
+  .maps .maps-container .maps-responsive {
+    padding-bottom: 110.25%;
+  }
+  .qr .qr-container p {
+    font-size: 1.5rem;
+  }
+  .pc {
+    display: block;
+  }
+  .penutup {
+    background: url(../img/bg-6.png) no-repeat left bottom, url(../img/bg-7.jpg) no-repeat center bottom;
+    background-size: 660px, auto;
+    padding-bottom: 230px;
+  }
+  .penutup p {
+    max-width: 515px;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .top {
+    background-size: 800px, 400px;
+    padding-top: 60px;
+  }
+  .countdown .countdown-wrapper {
+    width: 760px;
+    margin-top: 40px;
+  }
+  .countdown .countdown-wrapper ul li span:first-child {
+    font-size: 3.5rem;
+  }
+  .atcb_button {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+  .atcb_list_item {
+    font-size: 1.25rem;
+  }
+  .quotes {
+    background: url(../img/qt-bg-1.png) no-repeat left center, url(../img/qt-bg-2.png) no-repeat right center;
+    background-size: 250px, 200px;
+    background-color: #40523F;
+    background-position: 5% 50%, 93% 50%;
+    padding: 180px 0 130px;
+  }
+  .quotes p {
+    max-width: 650px;
+  }
+  .quotes p:nth-child(2) {
+    margin-top: 50px;
+  }
+  .undangan {
+    background: url(../img/bg-3.png) no-repeat top right, url(../img/bg-4.png) no-repeat bottom left;
+    background-size: 530px, 500px;
+    background-position-y: 30px, auto;
+  }
+  .undangan h1, .undangan h2 {
+    font-size: 3.5rem;
+  }
+  .undangan p:first-of-type {
+    max-width: 870px;
+    margin: 60px auto;
+  }
+  .undangan figure {
+    max-width: 717px;
+  }
+  .undangan .undangan-text p:first-of-type {
+    margin: 30px auto;
+  }
+  .undangan .undangan-text p {
+    margin: 30px auto;
+  }
+  .gallery {
+    background: none;
+  }
+  .gallery .gallery-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .gallery .gallery-container img {
+    width: 24%;
+    margin-bottom: 10px;
+  }
+  .lokasi {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .lokasi .resepsi {
+    margin-top: 0;
+  }
+  .lokasi .akad {
+    padding-top: 0;
+  }
+  .lokasi .akad, .lokasi .resepsi {
+    padding-top: 80px;
+    width: 560px;
+    margin: 0 25px;
+  }
+  .maps {
+    background-size: 500px;
+  }
+  .maps .maps-container {
+    width: 1200px;
+    margin: 30px auto;
+  }
+  .maps .maps-container .maps-responsive {
+    padding-bottom: 50.25%;
+  }
+  .qr .qr-container {
+    width: 700px;
+    margin: 30px auto;
+  }
+  .qr .qr-container img {
+    max-width: 250px;
+    margin-bottom: 20px;
+  }
+  .qr .qr-container::after {
+    width: 223px;
+    height: 450px;
+  }
+  .penutup {
+    background: white;
+    padding: 40px;
+    width: 700px;
+  }
+  .content {
+    background: url(../img/bg-6.png) no-repeat left bottom, url(../img/bg-7.jpg) no-repeat center bottom;
+    background-size: 1300px, auto;
+    padding-bottom: 300px;
+  }
+}
