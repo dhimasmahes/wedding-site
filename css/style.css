@@ -290,18 +290,18 @@ button {
   margin: 30px 0;
 }
 
+.undangan p.undangan-header {
+  margin: 30px 40px;
+}
+
 .undangan p {
   font-size: 1.25rem;
   line-height: 30px;
   margin: 0 35px;
 }
 
-.undangan p:first-of-type {
-  margin: 30px 40px;
-}
-
-.undangan .undangan-text p:first-of-type {
-  margin: 0;
+.undangan .undangan-text p {
+  margin: 10px;
 }
 
 .gallery {
@@ -410,6 +410,13 @@ button {
   font-family: "Dancing Script";
   color: #40523F;
   font-size: 4rem;
+}
+
+.qr p.qr-text {
+  font-size: 1.15rem;
+  line-height: 1.5em;
+  margin: 30px 20px;
+  color: #40523F;
 }
 
 .qr .qr-container {
@@ -552,6 +559,22 @@ button {
     font-size: 1.5rem;
     margin: 20px 100px;
   }
+  .gallery {
+    background: none;
+  }
+  .gallery .gallery-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  .gallery .gallery-container img {
+    width: 48%;
+    margin-bottom: 10px;
+  }
   .lokasi .resepsi {
     margin-top: -10px;
   }
@@ -646,7 +669,7 @@ button {
     margin: 0 auto;
   }
   .gallery .gallery-container img {
-    width: 24%;
+    width: 32%;
     margin-bottom: 10px;
   }
   .lokasi {

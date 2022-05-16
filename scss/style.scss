@@ -298,19 +298,19 @@ button{
         margin: 30px 0;
     }
 
+    p.undangan-header{
+        margin: 30px 40px;
+    }
+
     p{
         font-size: 1.25rem;
         line-height: 30px;
         margin: 0 35px;
     }
 
-    p:first-of-type{
-        margin: 30px 40px;
-    }
-
     .undangan-text{
-        p:first-of-type{
-            margin: 0;
+        p{
+            margin: 10px;
         }
     }
 }
@@ -421,6 +421,13 @@ button{
         font-family: $font-hand-2;
         color: $secondary-color;
         font-size: 4rem;
+    }
+
+    p.qr-text{
+        font-size: 1.15rem;
+        line-height: 1.5em;
+        margin: 30px 20px;
+        color: $secondary-color;
     }
 
     .qr-container{
@@ -584,6 +591,23 @@ button{
 
     }
 
+    .gallery{
+        background: none;
+        
+
+        .gallery-container{
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 700px;
+            margin: 0 auto;
+
+            img{
+                width: 48%;
+                margin-bottom: 10px;
+            }
+        }
+    }
+
     .lokasi{
         .resepsi{
             margin-top: -10px;
@@ -713,7 +737,7 @@ button{
             margin: 0 auto;
 
             img{
-                width: 24%;
+                width: 32%;
                 margin-bottom: 10px;
             }
         }
