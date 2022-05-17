@@ -134,6 +134,11 @@ button{
             right: -7px;
             font-size: 2.5rem;
             color: $secondary-color;
+            cursor: pointer;
+
+            :hover{
+                color: $tertiary-color;
+            }
         }
     }
 }
@@ -577,6 +582,22 @@ button{
 }
 
 @media screen and (min-width:768px) {
+    #protokol {
+        .protokol-content {
+            background-color: $primary-color;
+            margin: 25% 20px; /* 15% from the top and centered */
+            padding: 30px 20px;
+    
+            .protokol-container{
+                margin: 30px auto;
+
+                .protokol-item{
+                    width: 18%;
+                }
+            }
+        }
+    }
+    
     .top{
         background: url(../img/bg-1.png) no-repeat top right, url(../img/bg-2.png) no-repeat top left;
         background-size: 430px, 230px;
@@ -733,6 +754,41 @@ button{
 }
 
 @media screen and (min-width: 1024px){
+    #protokol {
+        .protokol-content {
+            background-color: $primary-color;
+            margin: 100px auto; /* 15% from the top and centered */
+            padding: 30px 20px;
+            width: 990px;
+
+            h2{
+                font-size: 3.5rem
+            }
+
+            p{
+                width: 750px;
+            }
+    
+            .protokol-container{
+                margin: 30px auto;
+                width: 730px;
+
+                .protokol-item{
+                    width: 205px;
+
+                    img{
+                        width: 145px;
+                    }
+
+                    p{
+                        width: 205px;
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+    }
+    
     .top{
         background-size: 800px, 400px;
         padding-top: 60px;

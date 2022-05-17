@@ -120,6 +120,11 @@ button {
   right: -7px;
   font-size: 2.5rem;
   color: #40523F;
+  cursor: pointer;
+}
+
+#protokol .protokol-content span.close-btn :hover {
+  color: #D4927D;
 }
 
 .atcb_button_wrapper {
@@ -577,6 +582,18 @@ button {
 }
 
 @media screen and (min-width: 768px) {
+  #protokol .protokol-content {
+    background-color: #FBF6E8;
+    margin: 25% 20px;
+    /* 15% from the top and centered */
+    padding: 30px 20px;
+  }
+  #protokol .protokol-content .protokol-container {
+    margin: 30px auto;
+  }
+  #protokol .protokol-content .protokol-container .protokol-item {
+    width: 18%;
+  }
   .top {
     background: url(../img/bg-1.png) no-repeat top right, url(../img/bg-2.png) no-repeat top left;
     background-size: 430px, 230px;
@@ -697,6 +714,33 @@ button {
 }
 
 @media screen and (min-width: 1024px) {
+  #protokol .protokol-content {
+    background-color: #FBF6E8;
+    margin: 100px auto;
+    /* 15% from the top and centered */
+    padding: 30px 20px;
+    width: 990px;
+  }
+  #protokol .protokol-content h2 {
+    font-size: 3.5rem;
+  }
+  #protokol .protokol-content p {
+    width: 750px;
+  }
+  #protokol .protokol-content .protokol-container {
+    margin: 30px auto;
+    width: 730px;
+  }
+  #protokol .protokol-content .protokol-container .protokol-item {
+    width: 205px;
+  }
+  #protokol .protokol-content .protokol-container .protokol-item img {
+    width: 145px;
+  }
+  #protokol .protokol-content .protokol-container .protokol-item p {
+    width: 205px;
+    margin-top: 20px;
+  }
   .top {
     background-size: 800px, 400px;
     padding-top: 60px;
