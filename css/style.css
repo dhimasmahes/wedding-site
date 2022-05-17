@@ -11,6 +11,7 @@
 body {
   background-color: #FBF6E8;
   font-family: "Montserrat", BlinkMacSystemFont, -apple-system, "Noto Sans", "Noto Sans CJK JP", "Noto Sans JP", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  overflow: hidden;
 }
 
 img {
@@ -27,6 +28,98 @@ button {
 
 .pc {
   display: none;
+}
+
+#protokol {
+  display: block;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 997;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: hidden;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+#protokol .protokol-content {
+  background-color: #FBF6E8;
+  margin: 15% 20px;
+  /* 15% from the top and centered */
+  padding: 30px 20px;
+  color: #40523F;
+  text-align: center;
+  position: relative;
+}
+
+#protokol .protokol-content h2 {
+  font-family: "Great Vibes";
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+#protokol .protokol-content p {
+  font-family: "Montserrat", BlinkMacSystemFont, -apple-system, "Noto Sans", "Noto Sans CJK JP", "Noto Sans JP", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  letter-spacing: 0.1em;
+  line-height: 1.5em;
+}
+
+#protokol .protokol-content .protokol-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px 0;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#protokol .protokol-content .protokol-container .protokol-item {
+  width: 28%;
+}
+
+#protokol .protokol-content .protokol-container .protokol-item p {
+  font-weight: 600;
+}
+
+#protokol .protokol-content button {
+  color: #FBF6E8;
+  background-color: #40523F;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  font-family: "Montserrat", BlinkMacSystemFont, -apple-system, "Noto Sans", "Noto Sans CJK JP", "Noto Sans JP", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  padding: 20px 30px;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 99;
+}
+
+#protokol .protokol-content button:hover {
+  background-color: white;
+  color: #40523F;
+}
+
+#protokol .protokol-content span.close-btn {
+  position: absolute;
+  top: -15px;
+  right: -7px;
+  font-size: 2.5rem;
+  color: #40523F;
 }
 
 .atcb_button_wrapper {

@@ -40,6 +40,7 @@ $block-spacing: 1.5rem !default;
 body{
     background-color: $primary-color;
     font-family: $font-sans;
+    overflow: hidden;
 }
 
 img{
@@ -56,6 +57,85 @@ button{
 
 .pc{
     display: none;
+}
+
+#protokol {
+    display: block; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 997; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: hidden; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+
+    .protokol-content {
+        background-color: $primary-color;
+        margin: 15% 20px; /* 15% from the top and centered */
+        padding: 30px 20px;
+        color: $secondary-color;
+        text-align: center;
+        position: relative;
+
+        h2{
+            font-family: $font-hand-1;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        p{
+            font-family: $font-sans;
+            font-size: 1rem;
+            margin-bottom: 20px;
+            letter-spacing: 0.1em;
+            line-height: 1.5em;
+        }
+
+        .protokol-container{
+            display: flex;
+            margin: 20px 0;
+            justify-content: space-evenly;
+
+            .protokol-item{
+                width: 28%;
+
+                p{
+                    font-weight: $weight-semibold;
+                }
+            }
+        }
+
+        button{
+            color: $primary-color;
+            background-color: $secondary-color;
+            border: none;
+            text-align: center;
+            text-decoration: none;
+            font-family: $font-sans;
+            font-size: 1rem;
+            font-weight: $weight-medium;
+            letter-spacing: 0.1em;
+            padding: 20px 30px;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 99;
+        }
+    
+        button:hover{
+            background-color: white;
+            color: $secondary-color;
+        }
+
+        span.close-btn{
+            position: absolute;
+            top: -15px;
+            right: -7px;
+            font-size: 2.5rem;
+            color: $secondary-color;
+        }
+    }
 }
 
 .atcb_button_wrapper {
