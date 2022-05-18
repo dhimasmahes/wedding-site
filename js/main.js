@@ -49,6 +49,19 @@ function copyToClipboard() {
     });
 }
 
+function copyToClipboardJp() {
+    const cb = navigator.clipboard;
+    const paragraph = document.getElementById("norek");
+    cb.writeText(paragraph.innerText).then(() => {
+        const button = document.getElementById("salin-btn-jp");
+        button.textContent = "コピーしました";
+
+        setTimeout(()=> {
+            button.innerHTML ='<i class="fa-solid fa-copy"></i> コピー';
+        }, 1000)
+    });
+}
+
 //Modal Function
 const body = document.body;
 const protokol = document.getElementById("protokol");
