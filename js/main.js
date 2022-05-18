@@ -58,17 +58,17 @@ const modalBtn2 = document.getElementById("closeBtn2");
 modalBtn.onclick = function() {
     protokol.style.display = "none";
     body.style.overflow = "auto";
-  }
+  };
 
 modalBtn2.onclick = function() {
     protokol.style.display = "none";
     body.style.overflow = "auto";
-}
+};
 
 window.onclick = function(event) {
     if (event.target == protokol) {
       protokol.style.display = "none";
       body.style.overflow = "auto";
     }
-}
+};
 
