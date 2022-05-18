@@ -1,18 +1,18 @@
 @use '_partials/reset';
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Dancing+Script:wght@600;700&family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Dancing+Script:wght@600;700&family=Great+Vibes&family=Shippori+Mincho:wght@500&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
 
 $primary-color: #FBF6E8;
 $secondary-color: #40523F;
 $tertiary-color: #D4927D;
 
-$family-sans-serif: BlinkMacSystemFont, -apple-system, "Noto Sans", "Noto Sans CJK JP", "Noto Sans JP", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif !default;
+$family-sans-serif: BlinkMacSystemFont, -apple-system, "Noto Sans", "Noto Sans CJK JP", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif !default;
 $family-monospace: monospace !default;
 $render-mode: optimizeLegibility !default;
 $font-sans: "Montserrat", $family-sans-serif;
-$font-hand-1: "Great Vibes";
-$font-hand-2: "Dancing Script";
+$font-hand-1: "Great Vibes", "Shippori Mincho";
+$font-hand-2: "Dancing Script", "Shippori Mincho";
 
 $size-1: 3rem !default;
 $size-2: 2.5rem !default;
@@ -57,6 +57,36 @@ button{
 
 .pc{
     display: none;
+}
+
+footer{
+    display: flex;
+    background-color: $secondary-color;
+    color: $primary-color;
+    height: 100px;
+
+    p{
+        margin: auto;
+        text-align: center;
+        font-size: 1.25rem;
+        letter-spacing: 0.075em;
+        font-weight: $weight-medium;
+    }
+
+    a{
+        text-decoration: none;
+        color: $primary-color;
+
+        
+    }
+
+    a:hover{
+        color: white;
+    }
+
+    a:active{
+        color: $primary-color;
+    }
 }
 
 #protokol {
@@ -568,9 +598,10 @@ button{
 .penutup{
     text-align: center;
     color: $secondary-color;
-    padding-bottom: 300px;
+    padding-bottom: 70px;
     background: url(../img/bg-sp.jpg) no-repeat bottom center;
     background-size: cover;
+    background-position-y: 0px;
 
 
     p{

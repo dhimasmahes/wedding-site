@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Dancing+Script:wght@600;700&family=Great+Vibes&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Dancing+Script:wght@600;700&family=Great+Vibes&family=Shippori+Mincho:wght@500&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css");
 @use '_partials/reset';
 * {
@@ -10,7 +10,7 @@
 
 body {
   background-color: #FBF6E8;
-  font-family: "Montserrat", BlinkMacSystemFont, -apple-system, "Noto Sans", "Noto Sans CJK JP", "Noto Sans JP", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: "Montserrat", BlinkMacSystemFont, -apple-system, "Noto Sans", "Noto Sans CJK JP", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   overflow: hidden;
 }
 
@@ -28,6 +28,36 @@ button {
 
 .pc {
   display: none;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #40523F;
+  color: #FBF6E8;
+  height: 100px;
+}
+
+footer p {
+  margin: auto;
+  text-align: center;
+  font-size: 1.25rem;
+  letter-spacing: 0.075em;
+  font-weight: 500;
+}
+
+footer a {
+  text-decoration: none;
+  color: #FBF6E8;
+}
+
+footer a:hover {
+  color: white;
+}
+
+footer a:active {
+  color: #FBF6E8;
 }
 
 #protokol {
@@ -62,13 +92,13 @@ button {
 }
 
 #protokol .protokol-content h2 {
-  font-family: "Great Vibes";
+  font-family: "Great Vibes", "Shippori Mincho";
   font-size: 2.5rem;
   margin-bottom: 20px;
 }
 
 #protokol .protokol-content p {
-  font-family: "Montserrat", BlinkMacSystemFont, -apple-system, "Noto Sans", "Noto Sans CJK JP", "Noto Sans JP", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: "Montserrat", BlinkMacSystemFont, -apple-system, "Noto Sans", "Noto Sans CJK JP", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-size: 1rem;
   margin-bottom: 20px;
   letter-spacing: 0.1em;
@@ -99,7 +129,7 @@ button {
   border: none;
   text-align: center;
   text-decoration: none;
-  font-family: "Montserrat", BlinkMacSystemFont, -apple-system, "Noto Sans", "Noto Sans CJK JP", "Noto Sans JP", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: "Montserrat", BlinkMacSystemFont, -apple-system, "Noto Sans", "Noto Sans CJK JP", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-size: 1rem;
   font-weight: 500;
   letter-spacing: 0.1em;
@@ -147,7 +177,7 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-family: "Montserrat", BlinkMacSystemFont, -apple-system, "Noto Sans", "Noto Sans CJK JP", "Noto Sans JP", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: "Montserrat", BlinkMacSystemFont, -apple-system, "Noto Sans", "Noto Sans CJK JP", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-size: 1.5rem;
   font-weight: 500;
   line-height: 24px;
@@ -189,7 +219,7 @@ button {
 }
 
 .atcb_list_item {
-  font-family: "Montserrat", BlinkMacSystemFont, -apple-system, "Noto Sans", "Noto Sans CJK JP", "Noto Sans JP", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: "Montserrat", BlinkMacSystemFont, -apple-system, "Noto Sans", "Noto Sans CJK JP", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -264,7 +294,7 @@ button {
 }
 
 .top h1 {
-  font-family: "Great Vibes";
+  font-family: "Great Vibes", "Shippori Mincho";
   max-width: 238px;
 }
 
@@ -340,7 +370,7 @@ button {
   position: absolute;
   color: rgba(255, 248, 227, 0.48);
   font-size: 2.45rem;
-  font-family: "Montserrat", BlinkMacSystemFont, -apple-system, "Noto Sans", "Noto Sans CJK JP", "Noto Sans JP", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: "Montserrat", BlinkMacSystemFont, -apple-system, "Noto Sans", "Noto Sans CJK JP", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   top: -20px;
   left: -20px;
   width: 40px;
@@ -352,7 +382,7 @@ button {
   position: absolute;
   color: rgba(255, 248, 227, 0.48);
   font-size: 2.45rem;
-  font-family: "Montserrat", BlinkMacSystemFont, -apple-system, "Noto Sans", "Noto Sans CJK JP", "Noto Sans JP", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: "Montserrat", BlinkMacSystemFont, -apple-system, "Noto Sans", "Noto Sans CJK JP", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   bottom: -50px;
   right: -20px;
   width: 40px;
@@ -373,7 +403,7 @@ button {
 }
 
 .undangan h1, .undangan h2 {
-  font-family: "Dancing Script";
+  font-family: "Dancing Script", "Shippori Mincho";
 }
 
 .undangan h1 {
@@ -429,7 +459,7 @@ button {
 }
 
 .lokasi .akad h1, .lokasi .resepsi h1 {
-  font-family: "Dancing Script";
+  font-family: "Dancing Script", "Shippori Mincho";
   font-size: 3.5rem;
   background: url(../img/loc-border-1.png) no-repeat center bottom;
   background-size: 250px;
@@ -472,7 +502,7 @@ button {
 }
 
 .maps h1 {
-  font-family: "Dancing Script";
+  font-family: "Dancing Script", "Shippori Mincho";
   color: #40523F;
   font-size: 4rem;
 }
@@ -505,7 +535,7 @@ button {
 }
 
 .qr h1 {
-  font-family: "Dancing Script";
+  font-family: "Dancing Script", "Shippori Mincho";
   color: #40523F;
   font-size: 4rem;
 }
@@ -553,7 +583,7 @@ button {
   border: none;
   text-align: center;
   text-decoration: none;
-  font-family: "Montserrat", BlinkMacSystemFont, -apple-system, "Noto Sans", "Noto Sans CJK JP", "Noto Sans JP", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: "Montserrat", BlinkMacSystemFont, -apple-system, "Noto Sans", "Noto Sans CJK JP", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-size: 1.5rem;
   padding: 20px 30px;
   margin-top: 20px;
@@ -569,9 +599,10 @@ button {
 .penutup {
   text-align: center;
   color: #40523F;
-  padding-bottom: 300px;
+  padding-bottom: 70px;
   background: url(../img/bg-sp.jpg) no-repeat bottom center;
   background-size: cover;
+  background-position-y: 0px;
 }
 
 .penutup p {
