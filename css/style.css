@@ -889,6 +889,6 @@ footer a:active {
   .content {
     background: url(../img/bg-6.png) no-repeat left bottom, url(../img/bg-7.jpg) no-repeat center bottom;
     background-size: 1300px, auto;
-    padding-bottom: 300px;
+    padding-bottom: 150px;
   }
 }
