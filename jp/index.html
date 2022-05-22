@@ -30,6 +30,23 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/add-to-calendar-button@1.8/assets/css/atcb.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
+
+    <style>
+        .atcb_icon{
+            display: none;
+        }
+
+        #protokol .protokol-content button {
+            font-weight: 700;
+        }
+
+        @media screen and (min-width: 1024px) {
+            .sp{
+                display: none;
+            }
+        }
+
+    </style>
 </head>
 <body>
     <div class="content">
@@ -104,8 +121,9 @@
         </div>
     
         <div class="undangan">
-            <h1 data-aos="fade-in" data-aos-duration="4000">謹啓</h1>
-            <p class="undangan-header" data-aos="fade-in" data-aos-duration="2000">
+            <h1 data-aos="fade-in" data-aos-duration="4000">Assalamualaikum Wr. Wb.</h1>
+            <p class="undangan-header pc" data-aos="fade-in" data-aos-duration="2000">
+                <span style="font-weight: 700; font-size: 24px;">謹啓</span><br><br>
                 皆様におかれましては <br>
                 ますますご清祥のこととお慶び申し上げます<br>
                 
@@ -114,9 +132,22 @@
                 感謝を込めて　ささやかな小宴を催したく存じます<br>
                 
                 ご多用中　誠に恐縮ではございますが<br>
-                ぜひご出席をいただきたく　ご案内申し上げます<br>
+                ぜひご出席をいただきたく　ご案内申し上げます<br><br>
+                <span style="font-weight: 700; font-size: 24px;">謹白</span>
                 </p>
-            <h1>謹白</h1>
+            <p class="undangan-header sp" data-aos="fade-in" data-aos-duration="2000">
+                <span style="font-weight: 700; font-size: 24px;">謹啓</span><br><br>
+                皆様におかれましては <br>
+                ますますご清祥のことと<br>お慶び申し上げます<br><br>
+                
+                このたび　私たちは<br>結婚をすることになりました<br>
+                つきましては　日頃<br>お世話になっております皆様に<br>
+                感謝を込めて　ささやかな<br>小宴を催したく存じます<br><br>
+                
+                ご多用中　誠に<br>恐縮ではございますが<br>
+                ぜひご出席をいただきたく<br>ご案内申し上げます<br><br>
+                <span style="font-weight: 700; font-size: 24px;">謹白</span>
+                </p>
             <figure data-aos="fade-in" data-aos-duration="2000"><img src="../img/und-1.png" alt="Rendi & Tiara"></figure>
             <div class="undangan-text">
                 <div data-aos="fade-in" data-aos-duration="2000">
@@ -165,23 +196,26 @@
         </div>
         <div class="qr" data-aos="fade-in" data-aos-duration="2000">
             <h1>デジタル祝儀</h1>
-            <p class="qr-text">Doa Restu anda merupakan karunia yang sangat berarti bagi kami. <br>
-                Dan jika memberi adalah ungkapan tanda kasih Anda, Anda dapat memberi kado secara cashless.</p>
             <div class="qr-container">
                 <!-- <div class="pc"></div> -->
                 <img class="pc" src="../img/qr-code.jpg" alt="5405137604">
                 <img src="../img/logo-bca.png" alt="BCA">
-                <p>銀行番号:</p>
+                <p>口座銀行:</p>
                 <p id="norek" value="5405137604">5405137604</p>
                 <p>Rendiansyah Wahyudi</p>
                 <button onclick="copyToClipboardJp()" id="salin-btn-jp"><i class="fa-solid fa-copy"></i> コピー</button>
             </div>
         </div>
         <div class="penutup" data-aos="fade-in" data-aos-duration="2000">
-            <p>Merupakan suatu kehormatan dan kebahagiaan bagi kami sekeluarga apabila Bapak/Ibu/Saudara/i berkenan hadir untuk memberikan doa restu kepada kedua mempelai. Atas kehadiran serta doa restu, kami ucapkan terima kasih.</p>
+            <p class="pc">皆様が結婚式に出席し、新郎新婦に祝福を与えることをいとわないならば、<br>それは我々にとって名誉と幸せです。 <br>皆様の存在と祝福に心から感謝します。</p>
+            <p class="sp">皆様が結婚式に出席し、新郎新婦に祝福を与えることをいとわないならば、それは我々にとって名誉と幸せです。 皆様の存在と祝福に心から感謝します。</p>
         </div>
 
     </div>
+
+    <footer>
+        <p>Powered by <a href="http://dhimasmahes.github.io" target="_blank">DHIMAS MAHESWARA</a></p>
+    </footer>
 
 </body>
 

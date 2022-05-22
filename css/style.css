@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Dancing+Script:wght@600;700&family=Great+Vibes&family=Shippori+Mincho:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Dancing+Script:wght@600;700&family=Great+Vibes&family=Shippori+Mincho:wght@400;500;600;700&family=BIZ+UDGothic:wght@400;700&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css");
 @use '_partials/reset';
 * {
@@ -10,7 +10,7 @@
 
 body {
   background-color: #FBF6E8;
-  font-family: "Montserrat", BlinkMacSystemFont, -apple-system, "Noto Sans", "Noto Sans CJK JP", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: "Montserrat", "BIZ UDGothic", BlinkMacSystemFont, -apple-system, "Noto Sans", "Noto Sans CJK JP", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   overflow: hidden;
 }
 
@@ -98,7 +98,7 @@ footer a:active {
 }
 
 #protokol .protokol-content p {
-  font-family: "Montserrat", BlinkMacSystemFont, -apple-system, "Noto Sans", "Noto Sans CJK JP", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: "Montserrat", "BIZ UDGothic", BlinkMacSystemFont, -apple-system, "Noto Sans", "Noto Sans CJK JP", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-size: 1rem;
   margin-bottom: 20px;
   letter-spacing: 0.1em;
@@ -129,7 +129,7 @@ footer a:active {
   border: none;
   text-align: center;
   text-decoration: none;
-  font-family: "Montserrat", BlinkMacSystemFont, -apple-system, "Noto Sans", "Noto Sans CJK JP", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: "Montserrat", "BIZ UDGothic", BlinkMacSystemFont, -apple-system, "Noto Sans", "Noto Sans CJK JP", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-size: 1rem;
   font-weight: 500;
   letter-spacing: 0.1em;
@@ -177,7 +177,7 @@ footer a:active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-family: "Montserrat", BlinkMacSystemFont, -apple-system, "Noto Sans", "Noto Sans CJK JP", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: "Montserrat", "BIZ UDGothic", BlinkMacSystemFont, -apple-system, "Noto Sans", "Noto Sans CJK JP", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-size: 1.5rem;
   font-weight: 500;
   line-height: 24px;
@@ -219,7 +219,7 @@ footer a:active {
 }
 
 .atcb_list_item {
-  font-family: "Montserrat", BlinkMacSystemFont, -apple-system, "Noto Sans", "Noto Sans CJK JP", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: "Montserrat", "BIZ UDGothic", BlinkMacSystemFont, -apple-system, "Noto Sans", "Noto Sans CJK JP", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -370,7 +370,7 @@ footer a:active {
   position: absolute;
   color: rgba(255, 248, 227, 0.48);
   font-size: 2.45rem;
-  font-family: "Montserrat", BlinkMacSystemFont, -apple-system, "Noto Sans", "Noto Sans CJK JP", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: "Montserrat", "BIZ UDGothic", BlinkMacSystemFont, -apple-system, "Noto Sans", "Noto Sans CJK JP", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   top: -20px;
   left: -20px;
   width: 40px;
@@ -382,7 +382,7 @@ footer a:active {
   position: absolute;
   color: rgba(255, 248, 227, 0.48);
   font-size: 2.45rem;
-  font-family: "Montserrat", BlinkMacSystemFont, -apple-system, "Noto Sans", "Noto Sans CJK JP", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: "Montserrat", "BIZ UDGothic", BlinkMacSystemFont, -apple-system, "Noto Sans", "Noto Sans CJK JP", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   bottom: -50px;
   right: -20px;
   width: 40px;
@@ -583,7 +583,7 @@ footer a:active {
   border: none;
   text-align: center;
   text-decoration: none;
-  font-family: "Montserrat", BlinkMacSystemFont, -apple-system, "Noto Sans", "Noto Sans CJK JP", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: "Montserrat", "BIZ UDGothic", BlinkMacSystemFont, -apple-system, "Noto Sans", "Noto Sans CJK JP", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-size: 1.5rem;
   padding: 20px 30px;
   margin-top: 20px;
