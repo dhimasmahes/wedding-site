@@ -206,6 +206,54 @@ footer a:active {
   color: #40523F;
 }
 
+nav {
+  position: fixed;
+  bottom: 10%;
+  right: 0;
+  z-index: 998;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #FBF6E8;
+  padding: 10px;
+  -webkit-box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+nav ul li {
+  display: block;
+  padding: 10px;
+  font-size: 1.15rem;
+  cursor: pointer;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #40523F;
+  font-weight: 500;
+}
+
+nav ul li.active {
+  background-color: #40523F;
+}
+
+nav ul li.active a {
+  text-decoration: none;
+  color: #FBF6E8;
+}
+
+nav ul li:hover {
+  background-color: #40523F;
+}
+
+nav ul li:hover a {
+  text-decoration: none;
+  color: #FBF6E8;
+}
+
 @media only screen and (max-width: 375px) {
   .atcb_button {
     padding: 20px 37px;
@@ -745,6 +793,9 @@ footer a:active {
 }
 
 @media screen and (min-width: 1024px) {
+  nav {
+    right: 10%;
+  }
   #protokol .protokol-content {
     background-color: #FBF6E8;
     margin: 100px auto;

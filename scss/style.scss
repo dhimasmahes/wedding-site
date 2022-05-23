@@ -215,6 +215,46 @@ footer{
     color: $secondary-color;
 }
 
+nav{
+    position: fixed;
+    bottom: 10%;
+    right: 0;
+    z-index: 998;
+    ul{
+        display: flex;
+        background: $primary-color;
+        padding: 10px;
+        box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
+        li{
+            display: block;
+            padding: 10px;
+            font-size: 1.15rem;
+            cursor: pointer;
+            a{  
+                text-decoration: none;
+                color: $secondary-color;
+                font-weight: $weight-medium;
+            }
+        }
+
+        li.active{
+            background-color: $secondary-color;            
+            a{
+                text-decoration: none;
+                color: $primary-color;
+            }
+        }
+
+        li:hover{
+            background-color: $secondary-color;            
+            a{
+                text-decoration: none;
+                color: $primary-color;
+            }
+        }
+    }
+}
+
 @media only screen and (max-width: 375px) {
     .atcb_button {
         padding: 20px 37px;
@@ -785,6 +825,10 @@ footer{
 }
 
 @media screen and (min-width: 1024px){
+    nav{
+        right: 10%;
+    }
+
     #protokol {
         .protokol-content {
             background-color: $primary-color;
